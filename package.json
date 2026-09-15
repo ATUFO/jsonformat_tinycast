@@ -1,0 +1,33 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "json-visualizer",
+  "title": "JSON Visualizer",
+  "description": "Format, validate, and explore JSON as a navigable tree",
+  "icon": "icon.png",
+  "author": "taofu",
+  "categories": ["Developer Tools"],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "view-json",
+      "title": "Visualize JSON",
+      "subtitle": "Tree, raw JSON, and JSONPath in one screen",
+      "description": "Explore JSON as a navigable tree with a raw JSON detail pane and live JSONPath queries",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.87.0",
+    "jsonpath-plus": "^10.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.17",
+    "@types/react": "19.0.10",
+    "esbuild": "^0.27.3",
+    "typescript": "^5.5.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "ray develop"
+  }
+}
